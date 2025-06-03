@@ -32,9 +32,41 @@ document.addEventListener("DOMContentLoaded", function (){
         minuto.textContent = minutosRestantes.toString().padStart(2, '0');
         segundo.textContent = segundosRestantes.toString().padStart(2, '0');
     };
+    
+
+    
+    function mostrarDescripcion() {
+        let ventana = document.getElementById("datos");
+        ventana.classList.remove("invisible");
+        ventana.classList.add("ventanas-flotantes");
+    }
+
+    function cerrarVentanas() {
+        let ventana = document.querySelector(".ventanas-flotantes");
+        if(ventana != null){
+            ventana.classList.remove("ventanas-flotantes");
+            ventana.classList.add("invisible");
+        }
+    }
+
+    // 👉 Asociar el evento al anchor con clase 'enlace-descripcion'
+    const enlace = document.querySelector('.btnDatos');
+    if (enlace) {
+        enlace.addEventListener('click', function (e) {
+            e.preventDefault(); // Evita que el enlace navegue a otra página
+            mostrarDescripcion();
+        });
+    }
 
     const intervalo = setInterval(actualizarCuentaRegresiva, 1000);
     actualizarCuentaRegresiva();
+
+    document.querySelectorAll(".cerrar").forEach(boton => boton.addEventListener("click", cerrarVentanas));
+    window.addEventListener("keydown", e => {
+        if(e.key == "Escape"){
+            cerrarVentanas();
+        }
+    })
 
 
 });
