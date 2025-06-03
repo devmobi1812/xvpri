@@ -1,0 +1,71 @@
+body{
+    width: 100%;
+}
+.principal{
+    display: flex;
+    color: white;
+    background-image: linear-gradient(rgba(5, 7, 12,0.75), rgba(5, 7, 12,0.75)), url('../img/cine.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+}
+
+/*CAJA DE CUENTA REGRESIVA CENTRADA EN X*/
+.cuenta-regresiva{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*NUMERITOS CENTRADOS*/
+.dias, .horas, .minutos, .segundos{
+    display: flex;
+    justify-content: center;
+}
+.fecha{
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+.donde{
+    background-color: rgb(255, 174, 54);
+    color: rgb(32, 32, 32);
+}
+
+.regalo{
+    background-color: rgb(212, 51, 67);
+    color: white;
+}
+.confirmar-asistencia{
+    background-color: rgb(230, 230, 230);
+}
+
+.que-musica-te-gusta{
+    background-color: rgb(29, 218, 45);
+    color: rgb(32, 32, 32);
+}
+
+
+.fecha, .donde, .regalo, .confirmar-asistencia, .que-musica-te-gusta{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fecha>h3, .donde>h3, .regalo>h3, .confirmar-asistencia>h3, .que-musica-te-gusta>h3{
+    font-size: 3rem;
+}
+
+
