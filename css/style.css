@@ -2,6 +2,7 @@ body{
     width: 100%;
     overflow-x: hidden;
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .principal{
     display: flex;
@@ -19,7 +20,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 6rem;
+    font-size: 5rem;
 }
 
 /*CAJA DE CUENTA REGRESIVA CENTRADA EN X*/
@@ -64,10 +65,43 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .fecha>h3, .donde>h3, .regalo>h3, .confirmar-asistencia>h3, .que-musica-te-gusta>h3{
     font-size: 3rem;
+}
+
+.icono{
+    width: 20rem;
+}
+
+/*VENTANAS*/
+
+.invisible{
+    display: none;
+}
+
+.ventanas-flotantes{
+    display: flex;
+    position: fixed;
+    z-index: 1; /* Asegura que la ventana esté por encima de otros elementos */
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.405);
+}
+
+.contenido-ventana{
+    background-color: #fff;
+    margin: 15% auto; /* Centra el contenido de la ventana */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Puede ajustar el ancho según tus necesidades */
+    border-radius: 10px;
 }
 
 
