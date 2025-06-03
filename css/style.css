@@ -46,7 +46,10 @@ body{
 }
 
 .donde{
+    /*LINEA VIEJA, COLOR MOSTAZA
     background-color: rgb(255, 174, 54);
+    */
+    background-color: rgb(197, 175, 104);
     color: rgb(32, 32, 32);
 }
 
