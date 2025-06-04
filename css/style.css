@@ -2,7 +2,10 @@ body{
     width: 100%;
     overflow-x: hidden;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 .principal{
     display: flex;
@@ -21,6 +24,11 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 5rem;
+}
+
+.subti{
+    display: flex;
+    justify-content: center;
 }
 
 /*CAJA DE CUENTA REGRESIVA CENTRADA EN X*/
