@@ -27,6 +27,7 @@ body{
 }
 
 h3{
+    text-align: center;
     font-weight: 700;
 }
 /*CAJA DE CUENTA REGRESIVA CENTRADA EN X*/
@@ -55,16 +56,21 @@ h3{
     /*LINEA VIEJA, COLOR MOSTAZA
     background-color: rgb(255, 174, 54);
     */
-    background-color: rgb(197, 175, 104);
-    color: rgb(32, 32, 32);
-}
-
-.regalo{
     background-color: rgb(212, 51, 67);
     color: white;
 }
+
+.regalo>img{
+    margin-bottom: 2rem;
+}
+
+.regalo{
+    color: rgb(32, 32, 32);
+    background-color: rgb(197, 175, 104);
+}
 .confirmar-asistencia{
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(212, 51, 67);
+    color: white;
 }
 
 .que-musica-te-gusta{
