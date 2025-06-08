@@ -1,0 +1,186 @@
+body{
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: "STIX Two Text", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.principal{
+    display: flex;
+    color: white;
+    background-image: linear-gradient(rgba(44, 45, 48, 0.75), rgba(5, 7, 12,0.75)), url('../img/alfombr-blur.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+
+}
+
+.claqueta {
+    width: 15rem;
+    
+}
+
+.principal>p{
+    padding: 0 5rem 0 5rem;
+}
+
+.titulo{
+    padding: 2rem;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+h3{
+    /*EL TAMAÑO ESTA MAS ABAJO*/
+    text-align: center;
+    font-weight: 700;
+}
+
+.fecha>h3, .donde>h3, .regalo>h3, .dresscode>h3, .confirmar-asistencia>h3, .que-musica-te-gusta>h3{
+    font-size: 2rem;
+}
+
+/*CAJA DE CUENTA REGRESIVA CENTRADA EN X*/
+.cuenta-regresiva{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem; /* Agrega espacio entre los elementos */
+
+}
+
+.time>h4{
+    font-size: 1rem;
+}
+
+div>p{
+    text-align: center;
+}
+
+/*NUMERITOS CENTRADOS*/
+.dias, .horas, .minutos, .segundos{
+    display: flex;
+    justify-content: center;
+}
+.fecha{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.colorDorado{
+    background: #9F6303;
+    background: linear-gradient(90deg, rgba(159, 99, 3, 1) 0%, rgba(247, 206, 12, 1) 50%, rgba(159, 99, 3, 1) 100%);
+}
+
+.color-negro{
+    background: #000000;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(64, 62, 59, 1) 50%, rgba(0, 0, 0, 1) 100%);
+}
+
+.color-rojo{
+    background: #6B0001;
+    background: linear-gradient(90deg, rgba(107, 0, 1, 1) 0%, rgba(194, 29, 32, 1) 50%, rgba(107, 0, 1, 1) 100%);
+}
+
+.donde{
+    /*LINEA VIEJA, COLOR MOSTAZA
+    background-color: rgb(255, 174, 54);
+    */
+    background-color: rgb(107, 0, 1);
+    color: rgb(0, 0, 0);
+}
+
+.regalo>img{
+    margin-bottom: 2rem;
+}
+
+.regalo{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.dresscode{
+    background-color: rgb(107, 0, 1);
+    color: rgb(255, 255, 255);
+}
+.confirmar-asistencia{
+    color: rgb(0, 0, 0);
+}
+
+.que-musica-te-gusta{
+    background-color: rgb(107, 0, 1);
+    color: rgb(255, 255, 255);
+}
+
+
+.fecha, .donde, .regalo, .dresscode, .confirmar-asistencia, .que-musica-te-gusta{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.icono{
+    width: 4rem;
+    padding-bottom: 1.5rem;
+}
+
+.invertido{
+    filter: invert(1);
+}
+
+/*VENTANAS*/
+
+.invisible{
+    display: none;
+}
+
+.ventanas-flotantes{
+    display: flex;
+    position: fixed;
+    z-index: 1; /* Asegura que la ventana esté por encima de otros elementos */
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.405);
+}
+
+.contenido-ventana{
+    background-color: #fff;
+    margin: 15% auto; /* Centra el contenido de la ventana */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Puede ajustar el ancho según tus necesidades */
+    border-radius: 10px;
+}
+
+.footer{
+    padding: 0.5rem;
+    display: flex;
+    background-color: rgb(32, 32, 32);
+    justify-content: center;
+    align-items: center;
+}
+
+.footer>a{
+    color: white;
+    text-decoration: none;
+}
+
+
