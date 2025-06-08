@@ -193,4 +193,61 @@ div>p{
     text-decoration: none;
 }
 
+/*BOTON FLOTANTE MUSICA*/
+.floating-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgb(107, 0, 1);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    text-decoration: none;
+}
+.floating-btn:hover {
+    background-color: rgb(107, 0, 1);
+}
+
+/*para bienvenida*/
+/* Pantalla de bienvenida */
+    #pantallaInicio {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #111;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      z-index: 1000;
+      text-align: center;
+    }
+
+    #pantallaInicio a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: rgb(107, 0, 1);;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 20px;
+      transition: background 0.3s;
+    }
+
+    #pantallaInicio a:hover {
+      background: rgb(146, 14, 16);;
+    }
+
+
+
 

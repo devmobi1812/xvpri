@@ -67,6 +67,44 @@ document.addEventListener("DOMContentLoaded", function (){
             cerrarVentanas();
         }
     })
+    
+    // AUDIO
+    const audio = document.getElementById("audio");
+    const button = document.getElementById("playPauseBtn");
+    let isPlaying = false;
+
+    // Mostrar el ícono de Play cuando se carga la página
+    window.addEventListener("load", () => {
+    button.style.backgroundImage = "url('img/iconos/play.png')";
+    
+    // Intentar reproducir automáticamente
+    audio.play().then(() => {
+        isPlaying = true;
+        button.style.backgroundImage = "url('img/iconos/pause.png')";
+    }).catch(() => {
+        // Si el navegador bloquea autoplay, se mantiene el ícono de Play
+        isPlaying = false;
+        button.style.backgroundImage = "url('img/iconos/play.png')";
+    });
+    });
+
+    // Al hacer clic en el botón
+    button.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (isPlaying) {
+        audio.pause();
+        button.style.backgroundImage = "url('img/iconos/play.png')";
+    } else {
+        audio.play().then(() => {
+        button.style.backgroundImage = "url('img/iconos/pause.png')";
+        }).catch((err) => {
+        console.error("Error al reproducir audio:", err);
+        });
+    }
+    isPlaying = !isPlaying;
+    });
+
+
 
 
 });
