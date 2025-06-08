@@ -1,3 +1,8 @@
+html{
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body{
     width: 100%;
     overflow-x: hidden;
@@ -14,12 +19,13 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    min-height: 100vh;
     flex-direction: column;
     justify-content: center;
 
     align-items: center; /* Centra horizontalmente */
     justify-content: center; /* Centra verticalmente */
+
 
 }
 
