@@ -176,6 +176,9 @@ div>p{
     width: 80%; /* Puede ajustar el ancho según tus necesidades */
     border-radius: 10px;
 }
+.contenido-ventana>p{
+    text-align: left;
+}
 
 .footer{
     padding: 0.5rem;
