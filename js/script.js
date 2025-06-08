@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function (){
     const minuto = document.querySelector('.minutos');
     const segundo = document.querySelector('.segundos');
 
-    const fechaObjetivo = new Date('August 09, 2025 20:00:00').getTime();
+    const fechaObjetivo = new Date('August 09, 2025 20:30:00').getTime();
 
     const actualizarCuentaRegresiva = () => {
         const ahora = new Date().getTime();
